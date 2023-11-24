@@ -1,0 +1,15 @@
+app:
+  name: kdubois-poi-gateway-app
+  namespace: kdubois
+  cluster: .apps.rosa-m9x67.dusy.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-lab/kdubois-gateway
+  org: rhdh23-lab
+  name: kdubois-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: kdubois/poi-gateway-app
+  tag: latest
